@@ -1,7 +1,7 @@
 {
-  "name": "repo-base",
+  "name": "typescript-basics",
   "version": "1.0.0",
-  "description": "Base for new repos",
+  "description": "Basics of typescript",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --open --config webpack.dev.js",
@@ -10,8 +10,12 @@
   },
   "author": "devinapurplesuit",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "typescript": "^2.7.2"
+  },
   "devDependencies": {
+    "@types/jasmine": "^2.8.6",
+    "@types/node": "^9.4.7",
     "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^0.28.10",
     "extract-text-webpack-plugin": "^3.0.2",
@@ -22,9 +26,11 @@
     "karma-chrome-launcher": "^2.2.0",
     "karma-jasmine": "^1.1.1",
     "karma-phantomjs-launcher": "^1.0.4",
+    "karma-typescript": "^3.0.12",
     "karma-webpack": "^2.0.13",
     "mini-css-extract-plugin": "^0.2.0",
     "style-loader": "^0.20.3",
+    "ts-loader": "^4.0.1",
     "uglifyjs-webpack-plugin": "^1.2.3",
     "webpack": "^4.1.1",
     "webpack-cli": "^2.0.11",

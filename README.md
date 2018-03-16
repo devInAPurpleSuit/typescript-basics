@@ -1,2 +1,2 @@
-# repo-base
-Base setup for new repos
+# typescript-basics
+Basics tutorial for typescript

@@ -11,7 +11,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
-      title: 'RxJS basics'
+      title: 'typescript basics'
     }),
     new webpack.NamedModulesPlugin(),
     new MiniCssExtractPlugin({
@@ -24,6 +24,10 @@ module.exports = {
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist')
+  },
+  resolve: {
+    // Add '.ts' and '.tsx' as a resolvable extension.
+    extensions: [".webpack.js", ".web.js", ".ts", ".tsx", ".js"]
   },
   module: {
     rules: [
@@ -39,7 +43,9 @@ module.exports = {
         use: [
           'file-loader'
         ]
-      }
+      },
+      // all files with a `.ts` or `.tsx` extension will be handled by `ts-loader`
+      { test: /\.tsx?$/, loader: "ts-loader" }
     ]
   }
 };
