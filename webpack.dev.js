@@ -9,7 +9,7 @@ module.exports = merge(common, {
     new webpack.HotModuleReplacementPlugin(),
   ],
   mode: 'development',
-  devtool: 'eval',
+  devtool: 'inline-source-map',
   devServer: {
     contentBase: './dist',
     hot: true,
