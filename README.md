@@ -1,2 +1,2 @@
-# rxjs5-basics
-RxJS 5 tutorial
+# repo-base
+Base setup for new repos

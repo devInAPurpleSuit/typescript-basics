@@ -1,26 +1,16 @@
 {
-  "name": "rxjs5-basics",
+  "name": "repo-base",
   "version": "1.0.0",
-  "description": "RxJS 5 tutorial",
+  "description": "Base for new repos",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --open --config webpack.dev.js",
     "test": "karma start karma.conf.js --mode development",
     "build": "webpack --config webpack.prod.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/devInAPurpleSuit/rxjs5-basics.git"
-  },
   "author": "devinapurplesuit",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/devInAPurpleSuit/rxjs5-basics/issues"
-  },
-  "homepage": "https://github.com/devInAPurpleSuit/rxjs5-basics#readme",
-  "dependencies": {
-    "rxjs": "^5.5.7"
-  },
+  "dependencies": {},
   "devDependencies": {
     "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^0.28.10",
@@ -34,7 +24,6 @@
     "karma-phantomjs-launcher": "^1.0.4",
     "karma-webpack": "^2.0.13",
     "mini-css-extract-plugin": "^0.2.0",
-    "rxjs-marbles": "^2.3.2",
     "style-loader": "^0.20.3",
     "uglifyjs-webpack-plugin": "^1.2.3",
     "webpack": "^4.1.1",
